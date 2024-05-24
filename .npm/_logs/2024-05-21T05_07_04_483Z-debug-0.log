@@ -1,0 +1,123 @@
+0 verbose cli [
+0 verbose cli   '/usr/bin/node',
+0 verbose cli   '/usr/bin/npm',
+0 verbose cli   'install',
+0 verbose cli   '--save-dev',
+0 verbose cli   '@playwright/test'
+0 verbose cli ]
+1 info using npm@8.5.1
+2 info using node@v12.22.9
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/yusuke/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:validate Completed in 0ms
+15 timing config:load:credentials Completed in 0ms
+16 timing config:load:setEnvs Completed in 0ms
+17 timing config:load Completed in 5ms
+18 timing npm:load:configload Completed in 5ms
+19 timing npm:load:setTitle Completed in 1ms
+20 timing config:load:flatten Completed in 1ms
+21 timing npm:load:display Completed in 1ms
+22 verbose logfile /home/yusuke/.npm/_logs/2024-05-21T05_07_04_483Z-debug-0.log
+23 timing npm:load:logFile Completed in 2ms
+24 timing npm:load:timers Completed in 0ms
+25 timing npm:load:configScope Completed in 0ms
+26 timing npm:load Completed in 11ms
+27 timing arborist:ctor Completed in 0ms
+28 timing arborist:ctor Completed in 0ms
+29 timing idealTree:init Completed in 8ms
+30 timing idealTree:userRequests Completed in 1ms
+31 silly idealTree buildDeps
+32 silly fetch manifest @playwright/test@*
+33 http fetch GET 200 https://registry.npmjs.org/@playwright%2ftest 247ms (cache miss)
+34 silly placeDep ROOT @playwright/test@1.44.0 OK for: yusuke@1.0.0 want: *
+35 silly fetch manifest playwright@1.44.0
+36 http fetch GET 200 https://registry.npmjs.org/playwright 184ms (cache miss)
+37 timing idealTree:#root Completed in 463ms
+38 silly placeDep ROOT playwright@1.44.0 OK for: @playwright/test@1.44.0 want: 1.44.0
+39 silly fetch manifest playwright-core@1.44.0
+40 silly fetch manifest fsevents@2.3.2
+41 http fetch GET 200 https://registry.npmjs.org/fsevents 125ms (cache miss)
+42 http fetch GET 200 https://registry.npmjs.org/playwright-core 210ms (cache miss)
+43 timing idealTree:node_modules/@playwright/test Completed in 227ms
+44 silly placeDep ROOT fsevents@2.3.2 OK for: playwright@1.44.0 want: 2.3.2
+45 silly placeDep ROOT playwright-core@1.44.0 OK for: playwright@1.44.0 want: 1.44.0
+46 timing idealTree:node_modules/playwright Completed in 3ms
+47 timing idealTree:node_modules/fsevents Completed in 0ms
+48 timing idealTree:node_modules/playwright-core Completed in 0ms
+49 timing idealTree:buildDeps Completed in 694ms
+50 timing idealTree:fixDepFlags Completed in 0ms
+51 warn EBADENGINE Unsupported engine {
+51 warn EBADENGINE   package: '@playwright/test@1.44.0',
+51 warn EBADENGINE   required: { node: '>=16' },
+51 warn EBADENGINE   current: { node: 'v12.22.9', npm: '8.5.1' }
+51 warn EBADENGINE }
+52 warn EBADENGINE Unsupported engine {
+52 warn EBADENGINE   package: 'playwright@1.44.0',
+52 warn EBADENGINE   required: { node: '>=16' },
+52 warn EBADENGINE   current: { node: 'v12.22.9', npm: '8.5.1' }
+52 warn EBADENGINE }
+53 warn EBADENGINE Unsupported engine {
+53 warn EBADENGINE   package: 'playwright-core@1.44.0',
+53 warn EBADENGINE   required: { node: '>=16' },
+53 warn EBADENGINE   current: { node: 'v12.22.9', npm: '8.5.1' }
+53 warn EBADENGINE }
+54 timing idealTree Completed in 707ms
+55 timing reify:loadTrees Completed in 707ms
+56 timing reify:diffTrees Completed in 1ms
+57 silly reify moves {}
+58 timing reify:retireShallow Completed in 0ms
+59 timing reify:createSparse Completed in 1ms
+60 timing reify:loadBundles Completed in 0ms
+61 silly audit bulk request {
+61 silly audit   '@playwright/test': [ '1.44.0' ],
+61 silly audit   playwright: [ '1.44.0' ],
+61 silly audit   fsevents: [ '2.3.2' ],
+61 silly audit   'playwright-core': [ '1.44.0' ]
+61 silly audit }
+62 verbose reify failed optional dependency /home/yusuke/node_modules/fsevents
+63 silly reify mark deleted [ '/home/yusuke/node_modules/fsevents' ]
+64 timing reifyNode:node_modules/fsevents Completed in 4ms
+65 silly tarball no local data for playwright-core@https://registry.npmjs.org/playwright-core/-/playwright-core-1.44.0.tgz. Extracting by manifest.
+66 silly tarball no local data for playwright@https://registry.npmjs.org/playwright/-/playwright-1.44.0.tgz. Extracting by manifest.
+67 silly tarball no local data for @playwright/test@https://registry.npmjs.org/@playwright/test/-/test-1.44.0.tgz. Extracting by manifest.
+68 http fetch GET 200 https://registry.npmjs.org/@playwright/test/-/test-1.44.0.tgz 132ms (cache miss)
+69 timing reifyNode:node_modules/@playwright/test Completed in 145ms
+70 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 148ms
+71 timing auditReport:getReport Completed in 149ms
+72 silly audit report {}
+73 timing auditReport:init Completed in 0ms
+74 timing reify:audit Completed in 150ms
+75 http fetch GET 200 https://registry.npmjs.org/playwright/-/playwright-1.44.0.tgz 212ms (cache miss)
+76 timing reifyNode:node_modules/playwright Completed in 222ms
+77 http fetch GET 200 https://registry.npmjs.org/playwright-core/-/playwright-core-1.44.0.tgz 240ms (cache miss)
+78 timing reifyNode:node_modules/playwright-core Completed in 248ms
+79 timing reify:unpack Completed in 248ms
+80 timing reify:unretire Completed in 0ms
+81 timing build:queue Completed in 1ms
+82 timing build:link:node_modules/playwright Completed in 1ms
+83 timing build:link:node_modules/@playwright/test Completed in 1ms
+84 timing build:link:node_modules/playwright-core Completed in 1ms
+85 timing build:link Completed in 1ms
+86 timing build:deps Completed in 2ms
+87 timing build Completed in 2ms
+88 timing reify:build Completed in 2ms
+89 timing reify:trash Completed in 1ms
+90 timing reify:save Completed in 3ms
+91 timing reify Completed in 969ms
+92 silly ADD node_modules/playwright-core
+93 silly ADD
+94 silly ADD node_modules/playwright
+95 silly ADD node_modules/@playwright/test
+96 timing command:install Completed in 972ms
+97 verbose exit 0
+98 timing npm Completed in 1059ms
+99 info ok

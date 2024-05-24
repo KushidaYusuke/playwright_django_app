@@ -1,0 +1,81 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.5.2
+2 info using node@v20.13.1
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/home/yusuke/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/usr/local/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 0ms
+15 timing config:load Completed in 5ms
+16 timing npm:load:configload Completed in 5ms
+17 timing config:load:flatten Completed in 1ms
+18 timing npm:load:mkdirpcache Completed in 0ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm install @playwright/test
+21 verbose argv "install" "--save-dev" "@playwright/test"
+22 timing npm:load:setTitle Completed in 0ms
+23 timing npm:load:display Completed in 0ms
+24 verbose logfile logs-max:10 dir:/home/yusuke/.npm/_logs/2024-05-21T05_28_45_852Z-
+25 verbose logfile /home/yusuke/.npm/_logs/2024-05-21T05_28_45_852Z-debug-0.log
+26 timing npm:load:logFile Completed in 1ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 15ms
+30 timing arborist:ctor Completed in 1ms
+31 silly logfile done cleaning log files
+32 timing idealTree:init Completed in 8ms
+33 timing idealTree:userRequests Completed in 0ms
+34 silly idealTree buildDeps
+35 silly fetch manifest @playwright/test@^1.44.0
+36 timing arborist:ctor Completed in 0ms
+37 http fetch GET 200 https://registry.npmjs.org/@playwright%2ftest 308ms (cache miss)
+38 silly placeDep ROOT @playwright/test@1.44.0 REPLACE for: yusuke@1.0.0 want: ^1.44.0
+39 timing idealTree:#root Completed in 352ms
+40 timing idealTree:node_modules/@playwright/test Completed in 0ms
+41 timing idealTree:buildDeps Completed in 353ms
+42 timing idealTree:fixDepFlags Completed in 0ms
+43 timing idealTree Completed in 362ms
+44 timing reify:loadTrees Completed in 363ms
+45 timing reify:diffTrees Completed in 1ms
+46 silly reify moves {}
+47 timing reify:retireShallow Completed in 0ms
+48 timing reify:createSparse Completed in 0ms
+49 timing reify:loadBundles Completed in 0ms
+50 silly audit bulk request {
+50 silly audit   '@types/node': [ '20.12.12' ],
+50 silly audit   fsevents: [ '2.3.2' ],
+50 silly audit   n: [ '9.2.3' ],
+50 silly audit   playwright: [ '1.44.0' ],
+50 silly audit   'playwright-core': [ '1.44.0' ],
+50 silly audit   'undici-types': [ '5.26.5' ],
+50 silly audit   '@playwright/test': [ '1.44.0' ]
+50 silly audit }
+51 verbose reify failed optional dependency /home/yusuke/node_modules/fsevents
+52 silly reify mark deleted [ '/home/yusuke/node_modules/fsevents' ]
+53 timing reifyNode:node_modules/fsevents Completed in 2ms
+54 timing reify:unpack Completed in 2ms
+55 timing reify:unretire Completed in 0ms
+56 timing build:queue Completed in 0ms
+57 timing build:deps Completed in 1ms
+58 timing build Completed in 1ms
+59 timing reify:build Completed in 1ms
+60 timing reify:trash Completed in 0ms
+61 timing reify:save Completed in 3ms
+62 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 158ms
+63 timing auditReport:getReport Completed in 159ms
+64 silly audit report {}
+65 timing auditReport:init Completed in 0ms
+66 timing reify:audit Completed in 160ms
+67 timing reify Completed in 529ms
+68 silly ADD
+69 timing command:install Completed in 536ms
+70 verbose exit 0
+71 timing npm Completed in 652ms
+72 info ok
